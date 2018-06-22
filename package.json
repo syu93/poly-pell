@@ -1,0 +1,37 @@
+{
+  "name": "poly-pell",
+  "main": "poly-pell.js",
+  "dependencies": {
+    "@polymer/lit-element": "^0.5.2",
+    "@polymer/polymer": "^3.0.0",
+    "pell": "^1.0.4"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.0"
+  },
+  "description": "A simple Polymer implementation of Pell WYSIWYG.",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Syu93",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syu93/poly-pell.git"
+  },
+  "keywords": [
+    "Polymer3",
+    "Pell",
+    "WYSIWYG"
+  ],
+  "bugs": {
+    "url": "https://github.com/syu93/poly-pell/issues"
+  },
+  "homepage": "https://github.com/syu93/poly-pell#readme"
+}

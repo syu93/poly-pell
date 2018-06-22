@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>poly-pell test</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+
+    <script type="module" src="../poly-pell.js"></script>
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+        <poly-pell></poly-pell>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="ChangedPropertyTestFixture">
+      <template>
+        <poly-pell html="{{html}}"></poly-pell>
+      </template>
+    </test-fixture>
+
+    <script type="module">
+      suite('poly-pell', () => {
+
+        test('instantiating the element with default properties works', () => {
+          const element = fixture('BasicTestFixture');
+          assert.equal(element.prop1, 'poly-pell');
+          const elementShadowRoot = element.shadowRoot;
+          const elementbar = elementShadowRoot.querySelector('.pell-actionbar');
+          assert.equal(elementbar.length, 1);
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
