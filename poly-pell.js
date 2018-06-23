@@ -1,5 +1,5 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
-import pell from './node_modules/pell/src/pell.js';
+import pell from '/node_modules/pell/src/pell.js';
 
 /**
  * `poly-pell`
